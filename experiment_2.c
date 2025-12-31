@@ -12,16 +12,16 @@ To write a C program to print name and age using printf() function.
 
 Algorithm:
 1. Start
-2. Use printf() to display name
-3. Use printf() to display age
+2. Declare variables for name and age
+3. Print name and age using printf()
 4. End
 
 Flowchart:
    Start
      |
- Print Name
+ Declare variables
      |
- Print Age
+ Print name & age
      |
     End
 */
@@ -29,13 +29,17 @@ Flowchart:
 #include <stdio.h>
 
 int main() {
-    printf("Name: Pukka Chandrashekhar\n");
-    printf("Age: 18\n");
+    char name[] = "Pukka Chandrashekhar";
+    int age = 20;
+
+    printf("Name: %s\n", name);
+    printf("Age: %d\n", age);
+
     return 0;
 }
 
 /*
 Output:
 Name: Pukka Chandrashekhar
-Age: 18
+Age: 20
 */
